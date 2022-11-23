@@ -1,16 +1,18 @@
+<!--v-model directive-->
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <input type="text" v-model="name">  <!--3.then add an input element.then to bind data property to the input we use v-model directive-->
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: {},
+  data() {            //1.first empty data object
+    return {
+      name: ''        //2.lets begin adding element to user enter their input. so define data property called name and initialize empty string
+    }
+  },
+  methods: {},
 }
 </script>
 
